@@ -15,8 +15,8 @@ function createWindow () {
 
   // and load the index.html of the app for REACT
   win.loadFile('index.html');
-  
-  // load URL for express server
+
+  // load URL for express server (not needed since we added the backend server to localhost:8000 through client/index.html)
   // win.loadURL(`http://localhost:8000/`)
 }
 
