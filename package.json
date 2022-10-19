@@ -2,10 +2,10 @@
   "name": "electron-practice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./electron/electron.ts",
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
-    "start": "npm run build && electron ./dist/electron.js",
+    "start": "npm run build && ENV=development electron ./dist/electron.js",
     "express-build": "npx tsc",
     "express-start": "node ./dist/server/express.js",
     "express-dev": "concurrently \"npx tsc --watch\" \"nodemon -q ./dist/server/express.js\""
